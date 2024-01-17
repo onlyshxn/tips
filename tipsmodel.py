@@ -23,6 +23,6 @@ else:
 
 
 if st.button("predict"):
-    model=joblib.load("tips model.h5")
+    model=joblib.load("tipsmodel.h5")
     prediction=model.predict([[tip,sex,smoker,time,size]])
     st.success(prediction[0])
